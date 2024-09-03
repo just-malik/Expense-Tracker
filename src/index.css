@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin :0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+html,body {
+  width: 100%;
+  height:100%;
+}
+.sign-up,.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.signup-form {
+  padding: 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.7);
+}
+.signin-form{
+  padding: 1rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.7);
+}
+.signup-form label,.signin-form label {
+  font-weight: 600;
+}
+.signup-form input,.signin-form input {
+  border: none;
+  font-size: 1rem;
+  padding: .5rem;
+}
+.signup-form h1 ,.signin-form h1 {
+  color: #48C6B7;
+  margin-bottom: 2rem;
+}
+.signin-form h1 {
+  text-align: center;
+}
+.signup-form button , .signin-form button {
+  color: white;
+  border: none;
+  background-color: #48C6B7;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.signup-form p,.signin-form p {
+  font-weight: 500;
+}
+.signup-form a,.signin-form a{
+  color: #48C6B7;
+  font-weight: 700;
+}
+nav {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #48C6B7;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+nav button {
+  background-color: white;
+  color: #48C6B7;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.balance {
+  margin-top: 3rem;
+  margin-left: 5rem;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 6rem 8rem;
+  box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.7);
+}
+.balance h1{
+  margin-bottom: 2rem;
+}
+.balance h2 {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.income , .expense {
+  box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.7);
+  display: flex;
+  margin-top: 3rem;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.income button , .expense button {
+  padding: .95rem 1rem;
+  color: white;
+  cursor: pointer;
+  background-color: #48C6B7;
+  font-weight: 600;
+  border-radius: .5rem;
+  border: none;
+}
+.income input , .expense input {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.income label , .expense label {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.transData {
+  display: grid;
+  text-align: center;
+  margin-top: 1rem;
+  grid-template-columns: 20rem 20rem 20rem 20rem;
+}
+.transData p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.Transactions{
+  overflow-y: scroll;
+  height: 60vh;
+  
+}
+.csvElement{
+  color: white;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  background-color: #48C6B7;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+@media screen and (max-width: 1350px) {
+ .main {
+  flex-direction: column;
+  gap: 1rem;
+ }
+ .balance {
+  padding: 3rem 4rem;
+  margin-left: 0;
+ }
+ .expense {
+  margin-bottom: 2rem;
+ }
+}
